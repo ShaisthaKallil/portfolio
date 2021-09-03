@@ -1,0 +1,119 @@
+html,body{
+	height:100%;
+}
+html{
+	box-sizing:border-box;
+}*,*:before,*:after{
+	box-sizing:inherit;
+}
+body{
+	margin:0;
+	padding:0;	
+	background:url('../images/bg1.jpg');
+}
+h1,h3,p,form,input{
+	margin:0;
+	padding:0;	
+}
+#container header h1 {
+	text-align: center;
+	letter-spacing: 1.2px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-color:beige;
+	color: #609;
+	padding:4px;
+}
+#container footer{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	background-color:beige;
+	height:35px;
+}
+#container footer p {
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #006;
+	padding:4px;
+}
+
+h3{
+	width:50%;
+	text-align:center;
+	margin:auto;
+	margin-top:30px;
+	color:#fff;
+	text-decoration:underline;	
+}
+progress[value]{
+	/*resets default appearance*/
+	-webkit-appearance:none;
+	appearance:none;
+	
+	width:250px;
+	height:20px;
+	margin-top:2%;
+	margin-left:40%;
+}
+
+/*styling the progress bar container*/
+progress[value]::-webkit-progress-bar{
+	background-color:#eee;
+	border-radius:2px;
+	box-shadow:0 2px 5px rgba(0,0,0,0.25) inset;
+}
+
+
+progress[value]::-webkit-progress-value{
+	  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #09c, gold);
+	border-radius:2px;
+	background-size:35px 20px,100% 100%,100% 100%;
+}
+
+
+section form{
+	width:50%;
+	background-color:#fff;
+	opacity:0.9;
+	margin:auto;
+	margin-top:2%;
+	padding:25px;
+}
+section form {
+	color:navy;	
+	letter-spacing:1.2px;
+}
+section input{
+	padding:4px;
+	border:1px solid olive;
+	border-radius:6px;
+	color:navy;
+	letter-spacing:1.2px;
+	margin-left:40px;
+}
+button{
+	border:1px outset olive;	
+	background-color:beige;
+	color:navy;
+	padding:5px;
+	font-size:16px;
+	letter-spacing:1.3px;
+}
+
+#phase2, #phase3, #phase4, #phase5, #show_summary{
+	display:none;	
+}
+#error1 h3{
+	color:red;
+    margin-bottom:16px;
+}
+span{
+	color:maroon;
+}

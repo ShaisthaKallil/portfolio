@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Multiple Phase Form</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/appForm.js" type="text/javascript"></script>
+</head>
+
+<!-- Multiple Phase Form -->
+
+<body>
+	<div id = "container">
+    	<header>
+       	  <h1> Food Survey </h1>
+        </header><!-- End of header -->
+        
+        <h3 id="status">Phase 1 of 5 </h3>
+        
+         <!--PROGRESS BAR-->
+   			<progress id="progressBar" value = "0" max = "100" style= "width:250px"></progress>
+    
+        <section>
+        	<form id="survey" onsubmit = "return false">
+            	<!-- Collect name of user in phase1-->
+        		<div id = "phase1">
+            		<div id="error1"></div>
+                    
+                    First Name: <input id="firstName" name="firstName" size="30"/><br /><br />
+                    Last Name: <input id="lastName" name="lastName" size="30"/><br/><br />
+                    
+                    Gender: <select id = "gender" name = "gender">
+        					<option value = "" ></option>
+                			<option value = "male" style="color:navy">male</option>
+               				<option value = "female" style="color:navy">female</option>
+        					</select><br/><br/>
+                    
+                    <button onclick="validatePhase1()">Continue</button>
+            	</div>
+                
+                <!-- Question1 -->
+                <div id = "phase2">
+                    
+                    How often do you dine out at a restaurant?<br /><br />	
+                    <input type="radio" name = "frequency" value ="Never"/> Never<br /><br />	
+                    <input type="radio" name = "frequency" value ="1-2 times a week"/> 1-2 times a week<br /><br />
+                    <input type="radio" name = "frequency" value ="3-4 times a week"/> 3-4 times a week<br /><br />
+                    <input type="radio" name = "frequency" value ="Daily"/> Daily<br /><br />
+                   
+                    
+                    <button onclick="validatePhase2()">Continue</button>
+            	</div>
+                   
+                <!-- Question2 -->
+                <div id= "phase3">
+       
+                    
+                 	What do you look for in your restaurant experience?<br /><br />	
+                    <input type="radio" name = "experience" value ="Food"/> Food<br /><br />	
+                    <input type="radio" name = "experience" value ="Location"/> Location<br /><br />
+                    <input type="radio" name = "experience" value ="Atmosphere"/> Atmosphere<br /><br />
+                    <input type="radio" name = "experience" value ="Service"/> Service<br /><br />
+                    
+                    <button onclick="validatePhase3()">Continue</button>
+            	</div>
+                   
+                <!-- Question3 -->
+                <div id = "phase4">
+            		
+                   
+                    Which of the following is your favorite type of cuisine?<br /><br />	
+                     <input type="radio" name = "favorite" value="Indian"/> Indian<br /><br />	
+                    <input type="radio" name = "favorite" value="Chinese"/> Chinese<br /><br />
+                    <input type="radio" name = "favorite" value="Italian"/> Italian<br /><br />
+                    <input type="radio" name = "favorite" value="American"/> American<br /><br />
+                    
+                    <button onclick="validatePhase4()">Continue</button>
+            	</div>
+                   
+                <!-- Question4 -->
+                <div id = "phase5">
+            		
+                    
+                    How often do you try new food?<br /><br />	
+                     <input type="radio" name = "new" value="Never"/> Never<br /><br />	
+                    <input type="radio" name = "new" value="Sometimes"/> Sometimes<br /><br />
+                    <input type="radio" name = "new" value="Always"/> Always<br /><br />
+                    
+                    <button onclick="validatePhase5()">Continue</button>
+            	</div>
+                
+                  <!-- Overview of the entered data by the user-->
+     			<div id = "show_summary">
+                
+       				 First Name:&nbsp;&nbsp;<span id = "display_fname"></span><br/><br />
+        			 Last Name:&nbsp;&nbsp;<span id = "display_lname"></span><br/><br />
+                     Gender:&nbsp;&nbsp;<span id = "display_gender"></span><br/><br />
+       				 How often do you dine out at a restaurant?<br /><span id = "display_ans_one"></span><br/><br />
+      				 What do you look for in your restaurant experience?<br /><span id = "display_ans_two"></span><br/><br />
+                     Which of the following is your favorite type of cuisine?<br /><span id = "display_ans_three"></span><br/><br />
+                     How often do you try new food?<br/><span id = "display_ans_four"></span><br/><br />
+                     
+        			<button onclick = "submitForm()">Submit</button>
+     			 </div>
+                
+           </form><!-- End of form -->
+        </section><!-- End of section -->
+        
+        <footer>
+       	  <p>&copy; 2018, Shaistha Kallil</p>
+        </footer>
+    </div><!-- End of container-->
+</body>
+</html>

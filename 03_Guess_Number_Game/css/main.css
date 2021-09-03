@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**************
+ General 
+ **************/
+
+body{
+  margin:0 auto;
+}
+
+#container{
+  background-color: black;
+  border:2px solid red;
+  opacity:0.8;
+  border-radius:4%;
+  height:390px;
+  width:600px;
+  font-size:20px;
+  color:#333;
+  margin: 8% auto;
+  position:relative;
+  /*margin-top:15px;*/
+}
+
+/*************** 
+paragraphs,header 
+***************/
+
+h3{
+  color:#fff;
+  text-align:center;
+
+}
+
+p{
+  margin:0;
+  padding:3px 0px;
+  height:15px;
+  color:#fff;
+  text-align:center;
+  	
+}
+
+/****************
+ heading 
+ ***************/
+ 
+#contain h3{
+  margin-top:20px;
+  padding:20px;
+  font-weight:200;
+}
+
+/*****************
+display boxes
+*****************/
+
+#fail,#success,#over{
+  width:100%;
+  padding:3px 0px;	
+
+}
+
+#fail{
+  color:maroon;	
+}
+
+#over{
+  color: red;	
+  position:absolute;
+  left:24%;
+  top: 2%;
+  padding:5px;
+  font-weight:bold;
+}
+
+#success{
+  color:green;	
+}
+
+/**************************
+ user game life container 
+**************************/
+
+#life_coin{
+   width:150px;
+   margin:auto;
+		
+}
+
+/***************************
+ game life coin design 
+ **************************/
+ 
+.game_life{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	display:inline-block;	
+	margin-left:8%;
+}
+
+#life_coin #one{
+  background-color:green;
+  box-shadow: 6px 6px 2px;
+}
+#life_coin #two{
+  background-color: yellow;
+  box-shadow: 6px 6px 2px;
+}
+#life_coin #three{
+  background-color: red;
+  box-shadow: 6px 6px 2px;
+}
+/****************************
+ user input 
+ ***************************/
+ 
+#guess{
+   padding:8px;
+   color:blue;
+   background-color:rgb(180,190,100);
+   background-color:beige;
+   font-size:15px;
+   font-weight:bold;
+   margin-left:20%;
+   margin-top:25px;
+}
+
+/******************************
+ user submission buttons
+ *****************************/
+ 
+#submit,#reset{
+   padding:8px;
+   border-radius:15px;
+   font-size:15px;
+   color:#fff;
+   background-color:rgb(20,100,0);
+   margin-left:10px;
+}
+
+#reset{
+  background-color:blue;	
+}
+

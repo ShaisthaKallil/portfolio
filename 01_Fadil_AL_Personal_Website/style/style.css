@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/*
+ CSS STYLE SHEET 
+ */
+ 
+ /*
+ Apply natural box layout model
+ */
+ html{
+	 box-sizing: border-box;
+	 font-size:62.5%;
+	 height:100%;
+ }
+ *,*:before,*:after{
+	 box-sizing: inherit;
+ }
+ 
+ /*
+ General
+ */
+ body{
+	 margin:0;
+	 padding:0;
+	 overflow:hidden;
+ }
+ 
+ 
+ h1,h2,ul,p{
+	 margin:0;
+	 padding:0;
+ }
+ 
+ .fakeloader{
+	 background:url('../images/spinner.gif') no-repeat;
+	 background-position:center;
+ }
+ 
+ /*
+  Only turn this block overlay on when nav menu is clicked 
+ */
+ #overlay{
+	 height:755px;
+	 width:100%;
+	 background-color:#000;
+	 opacity:0.5;
+	 position:absolute;
+	 top:0;
+	 left:0;
+ }
+ /*
+ Header
+ */
+header#home{
+	background:url(../images/bg2.jpg) no-repeat;
+	 background-size:cover;
+	 background-position:50%;
+	 height:755px;
+	
+ }
+ 
+ header #logoContain{
+	 width:11%;
+	 position:fixed;
+	 top:0px;
+	 left:55px;
+	 border-bottom:3px solid beige;
+	 border-right:3px solid navy;
+	 border-left:3px solid navy;
+	 background:linear-gradient(90deg,silver,white,silver,white,silver);
+	 border-radius:50%;
+	 margin:0 auto;
+	 padding-top:10px;
+	 padding-bottom:12px;
+ }
+header #logoContain img{
+	width:100px;
+	height:100px;
+}
+ 
+#heading{
+	 width:46%;
+	 height:755px;
+	 font-family:'Playfair Display', verdana, Open-Sans,sans-serif;
+	 
+	 float:left;
+ }
+ 
+#heading h1{
+	
+	position:fixed;
+	top:120px;
+	margin-left:45px;
+	font-size:7rem;
+	color:navy;
+	text-shadow:3px 3px beige;
+}
+
+#heading h2{
+	position:absolute;
+	top:465px;
+	margin-left:20%;
+	margin-bottom:50px;
+	font-size:4rem;
+	color:navy
+	text-shadow:3px 3px beige;
+	
+}
+
+.resumeB,.subresumeB{
+	position:fixed;
+	bottom:50px;
+	padding:4px;
+	border-radius:7px;
+	margin-left:45%;
+	margin-bottom:20px;
+	font-size:3rem;
+	background-color:navy;
+	color:#f5f5f5;
+	text-shadow:1px 1px lightblue;
+	cursor:pointer;
+}
+.subresumeB{
+	position:absolute;
+	left:0px;
+	margin-left:5%;
+	
+}
+/*###################MEDIA QUERY#####################*/
+@media(max-width:1075px){
+   #heading h2{
+	   margin-left:3%;
+   }
+}
+ 
+ header #menuIcon{
+	 cursor:pointer;
+	 padding:10px;
+	 float:right;
+	 position:fixed;
+	 right:40px;
+	 top:15px;
+	
+	 text-align:center;
+	 background-color:beige;
+	 z-index:9999;
+	 
+ }
+ 
+ header #text{
+	 font-size:1.5rem;
+	 text-decoration:none;
+	 font-family:'Droid-Sans',verdana, sans-serif;
+ }
+ 
+ header #text a{
+	 text-decoration:none;
+	 font-family:'Droid-Sans',verdana, sans-serif;
+ }
+ 
+ header #menuIcon:hover{
+	 background-color:lightblue;
+ }
+ header nav {
+	
+	 width:20%;
+	float:right;
+	position:relative;
+	top:95px;
+	right:8%;
+	 padding:5px;
+	 background-color:black;
+	 border-radius:10px;
+ } 
+ header nav ul{
+	 
+	 list-style-type:none;
+	
+ }
+ 
+ header nav li{
+	 background-color:#f5f5f5;
+	 margin:8px;
+	 padding:6px 2px;
+ }
+ header nav li a{
+	 color:navy;
+	 text-shadow:1px 1px #f3f3f3;
+	 text-decoration:none;
+	 padding:5px 130px 5px 15px;
+	 color:black;
+	 font-size:2.3rem;
+	 text-align:center;
+ }
+ header nav li:hover{
+	 background-color:lightblue;
+ }
+ header nav li:hover a{
+	 font-weight:bold;
+	 color:navy;
+ }
+ 
+ 
+ 
+ /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ ::header,logo,section - about,experience,education,skills,contact::
+ :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+  
+ header #logoSubContain{
+	width:20%;
+	text-align:center;
+	border-bottom:3px solid white;
+	border-right:3px solid navy;
+	border-left:3px solid navy;
+	background:linear-gradient(90deg,silver,white,silver,white,silver);
+	border-radius:50%;
+	position:absolute;
+	top:5px;
+ }
+ 
+ #logoSubContain img{
+	 padding:0 90px 5px 50px;
+	  cursor:pointer;
+								/*width:100%;
+								height:auto;*/
+ }
+ 
+ #logoSubContain:hover {
+	 border-bottom:3px solid navy;
+	 border-right:3px solid white;
+	 border-left:3px solid white;
+ }
+ .menusubIcon{
+	 margin-top:160px;
+	 margin-left:40%;
+	 width:60px;
+	 text-align:center;
+	 padding-top:8px;
+	 padding-bottom:4px;
+	 background-color:lightblue;
+ }
+ header.subPgHeader{
+	/*background:linear-gradient(#bbdaf6,#96b2d0,#bbdaf6);*//*149eff; b3a887; 757068*/
+	height:755px;
+	width:20%;
+	max-width:480px;
+	float:left;
+	opacity:0.9;
+	/*background:url(../images/bg2a.jpg) no-repeat;*/
+	background-position:45%;
+	background-size:cover;
+
+	
+ }
+ nav.subNav{
+	 /***********************************remove********/
+	 background-color:white;
+	 opacity:0.8;
+	 position:absolute;
+	 left:0px;
+	 top:35%;
+	 
+ }
+ 
+ 
+ .subNav ul{
+	 background-color:lightblue;
+ }
+ 
+ .subNav ul li{
+	 background-color:navy;
+	
+ }
+ .subNav ul li a{
+	 color:white;
+	 text-shadow:2px 2px navy;
+ }
+ 
+ .subNav ul li a:hover{
+	 color:navy;
+	 text-shadow:0 0;
+ }
+ 
+ section.subSect{
+	width:100%;
+	height:755px;
+	
+ }
+ 
+ .subSect .subHeading{
+	
+	 width:80%;
+	 padding-bottom:5px;
+	 float:left;
+	 
+	 right:0px;
+	 text-align:center;
+	 line-height:1.5;
+	 border-bottom:1px solid navy;
+	 border-radius:20%;
+	 
+ }
+ .subHeading h1{
+	 color:navy;
+	 text-shadow:1px 1px #333;
+	 letter-spacing:1;
+	 font-size:2.3rem;
+ }
+ .subHeading h2{
+	  color:#0063f5;
+	 text-shadow:1px 1px lightblue;
+	 letter-spacing:1;
+	 font-weight:100;
+	 font-size:2rem;
+ }
+ 
+ 
+ /*::::::::::::::::::
+ ::   ABOUT PAGE   ::
+ ::::::::::::::::::*/
+
+
+ #profileDesc p{
+	 font-family:'Pacifico',verdana,open-sans,sans-serif;
+	 letter-spacing:2.2;
+	 font-size:20px;
+	 padding-left:10px;
+	 line-height:2;
+	 margin-top:7px;
+	 color:navy;
+	 font-weight:100;
+	
+ }
+ /*////////////////////////scrollbar//////////////////////*/
+
+#scrollbar {
+    width:0.5%;
+    height:50%;
+	border-radius:50%;
+    background:linear-gradient(#149eff,silver,#0063f5,silver,#149eff);
+    /*background-color:red;004ce3; 0063f5; 149eff; */
+    margin-top: 90px;
+	margin-left:70px;
+	margin-right:60px;
+    line-height:0;
+	float:left;
+	position:relative;
+}
+#scrollbar .handle {
+    position:absolute;
+	left:-12px;
+	top:5px;
+}
+#frame {
+  width:60%;
+  height:53.7%;
+  margin-left:30%;
+  overflow-y:scroll;
+  position:relative;
+  top:90px;
+  
+  
+}
+ #profileDesc h2{
+	  font-family:'Pacifico',verdana,open-sans,sans-serif;
+	  font-size:3.2rem;
+	  text-align:center;
+	  display: flex;
+	  flex-direction: col;
+	  color:navy;
+	  font-weight:200;
+
+ }
+ 
+ /*
+ footer
+ */
+ footer{
+	 background-color:lightblue;
+	 text-align:center;
+	 height:29px;
+
+ }
+ footer p{
+	 color:navy;
+	 font-size:12px;
+	 line-height:1.5;
+	 font-weight:bold;
+ }
+ 

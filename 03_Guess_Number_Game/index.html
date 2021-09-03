@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Guess Number Game</title>
+<link href = "css/main.css" rel = "stylesheet" type = "text/css" />
+</head>
+
+	<!-- @shaistha shaistha.kallil@gmail.com :: Guess a number between 1 and 5 game -->
+<body>
+
+ <!-- holds the contents of game -->
+ <div id = "container">
+  
+    <!-- game info -->
+ 	<div id = "contain">
+    
+        <!-- Display boxes -->
+    	<div id = "success"></div>
+        <div id = "fail"></div>
+        <div id = "over"></div>
+        
+        <!-- Information -->
+		<h3>Guess the number of fingers.
+        <br/>Number range is between 1 and 5</h3>
+	    
+        <hr/>
+        
+        <!-- Number of lives counter -->
+        <p>LIVES :<p>
+        <div id = "life_coin">
+        <div id = "one" class = "game_life"></div>
+        <div id = "two" class = "game_life"></div>
+        <div id = "three" class = "game_life"></div>
+        </div>
+       
+        <hr/>
+        
+        <!-- User guess input submission area -->
+    	<input id = "guess" placeholder = "Only Enter Number 0 - 5" />
+		<button id = "submit">My Guess </button>
+        <button id = "reset">Try Again </button>
+        
+    </div><!-- End of contain -->
+    
+ </div><!-- End of container -->
+
+ <!-- script -->
+ <script src = "js/appGuess.js"></script>
+ 
+</body>
+</html>

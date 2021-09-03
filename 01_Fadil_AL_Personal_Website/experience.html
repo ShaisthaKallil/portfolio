@@ -1,0 +1,394 @@
+<!DOCUMENT HTML>
+<html lang = "en">
+<head>
+	<!-- Meta tags -->
+	<meta charset = "utf-8" />
+	<meta http-equiv = "Content-Type" content = "text/html;charset = utf-8" />
+	<meta name = "viewport" content = "width = device-width, initial-scale=1.0"/>
+	
+	<!-- Title -->
+	<title>Fadil Abdul Lathif | Experience </title>
+	
+	<!-- Links -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src = "javascript/appfadil.js" type = "text/javascript"></script>
+	<script src = "javascript/sly.js" type = "text/javascript"></script>
+	<script src = "javascript/fakeLoader.min.js" type = "text/javascript"></script>
+	<!--Favicon-->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display|Pacifico' rel='stylesheet' type='text/css'>
+	
+	<link href = "style/style.css" rel = "stylesheet" type = "text/css" />
+	<style type = "text/css">
+		.row{
+		   margin:0;
+		}
+		#experienceDesc{
+			padding-top:90px;
+			margin-bottom:30px;
+			margin-left:20%;
+			
+		}
+		.job{
+			color:#222;
+			background-color:white;
+			border-bottom:2px solid grey;
+			font-family:Arial,verdana,Open-Sans,sans-serif;
+			width:90%;
+			margin-left:5%;
+			font-size:12px;
+			padding:4px;
+			text-align:center;
+		}
+		
+		.job #scrollbar{
+		    margin-top:5px;
+			height:50%;
+		    display:none;
+			position:relative;
+		}
+		
+		.job #scrollbar .handle{
+		    top:10;
+		}
+		
+		.job  #frame {
+			width:80%;
+			height:55%;
+			overflow-y:scroll;
+			position:relative;
+			top:0px;
+			left:-200px;
+			display:none;
+		}
+		
+		.job .jobDutyDesc li{
+		   color:navy;
+		}
+		.current .item{
+			background-color:navy;
+			
+		}
+		.current .item h2{
+		    color:white;
+		}
+		.item{
+			cursor:pointer;
+			padding-top:3px;
+			padding-bottom:7px;
+			box-shadow:3px 3px navy;
+			
+		}
+		.item:hover {
+			background-color:silver;
+		}
+		.item .col{
+			display:inline-block;
+			width:30%;
+            color:navy;
+			
+		}
+		.item .title{
+			margin-left:20px;
+			text-align:left;
+		}
+		.item .jobTitle{
+		   text-align:center;
+		}
+		.item .workDate{
+			text-align:right;
+		}
+		
+	   .jobDutyDesc{
+	        display:none;
+			padding:15px;
+			font-size:1.6rem;
+			letter-spacing:1.4px;
+			line-height:1.5;
+			width:90%;
+			margin-left:4.5%;
+			text-align:justify;
+			
+		
+		}
+		.jobDutyDesScroll{
+		   
+			font-size:1.2rem;
+			letter-spacing:1.4px;
+			line-height:1.5;
+			width:90%;
+			margin-left:4.5%;
+			text-align:justify;
+		}
+		.jobDutyDesc h2{
+			margin-top:0px;
+			font-size:2.3rem;
+		}
+		.jobDutyDesc li,.jobDutyDesScroll li{
+		position:relative;
+		top:-10px;
+		font-size:12px;
+		padding:2px;
+		}
+		.jobDutyDesScroll li{
+		 top:-160px;
+		}
+		
+	
+	
+	</style>
+</head>
+
+<!-- FADIL ABDUL LATHIF PERSONAL WEB PAGE -->
+<!-- @ShaisthaKallil :: shaistha@shaikallil.info -->
+<body>
+    <!--Overlay -->
+    <div id = "overlay"></div>
+	<header class = "subPgHeader">
+		
+		<!-- logo-->
+		<div id = "logoSubContain">
+			<a href = "index.html"><img id = "logo" src = "images/logo.png" alt = "logo" /><a>
+		</div>
+		
+		<!-- menu icon -->
+		<div class = "menusubIcon">
+			<a href = "#"><img src = "images/menuicon.png" alt = "menu icon" /></a>
+			<div id = "text"><a href = "#">menu</a></div>
+		</div>
+		
+		<!-- Navigation -->
+	
+		<nav class = "subNav">
+			<ul>
+			    <li id = "first"><a href = "index.html">Home</a></li>
+				<li><a href = "about.html">About</a></li>
+				<li><a href = "experience.html">Experience</a></li>
+				<li><a href = "education.html">Education</a></li>
+				<li><a href = "skills.html">Skills</a></li>
+				<li><a href = "contact.html">Contact</a></li>
+			</ul>
+		</nav><!--End of Navigation-->
+	
+	    <button class = "subresumeB">Resumé</button>
+	</header><!--End of Header -->
+	
+	<!--Experience Section -->
+	<section class = "subSect">
+		<div class = "subHeading">
+			<h1>Fadil Abdul Lathif</h1>
+			<h2>Project Management, Information Technology</h2>
+		</div>
+		
+	
+		<div id = "experienceDesc">
+		
+		  <!-- Latest Job -->
+		  <div class = "job current">
+			<div class= "item row">
+			  <div class = "col">
+				<h2 class = "title">Unisys Canada Inc. Pickering,Ontario</h2>
+			  </div><!-- End of First Col -->
+			  <div class = "col">
+				<h2 class = "jobTitle">Helpdesk Technician</h2><br>
+			  </div><!-- End of second Col -->
+			  <div class = "col">
+				<h2 class = "workDate">Jan 2014 - Present</h2><br>
+			  </div><!-- End of third Col -->
+			</div><!-- End of item row -->
+			
+				<!-- scrollbar - sly -->
+			<div id ="scrollbar">
+				<div class="handle">
+					<img src = "images/arrow.png" />
+				</div>
+			</div>
+			
+			<div id = "frame">
+			 <!-- <div class = "jobDutyDesc slidee">-->
+				
+				
+				<ul class = "jobDutyDesScroll" class = "slidee">
+				  <li>Provided day to day service delivery with Change Management, Incident Management, and Problem Management for IT department.</li>
+				  <li>Key player in reducing the gap between industry standards and service catalogue.</li>
+				  <li>Analysis of the as-is business, technical and physical operating environment related to deployment and development of solution.</li>
+				  <li>Ensure the agreed project management methods, standards and processes are maintained throughout the project lifecycle.</li>
+				  <li>Assist the Project Manager and Team Managers in the production and maintenance of project plans.</li>
+				  <li>Develop and maintain the project library, filing, recording and reporting systems.</li>
+				  <li>Develop and implement appropriate configuration management procedures.</li>
+				  <li>Co-ordinate the production of all reports and produces project summary reports.</li>
+				  <li>Set up and maintain systems for recording project costs.</li>
+				  <li>Define and document procedures in accordance with agreed methodology</li>
+				  <li>Advise and assist project team members in the application of project procedures, disciplines and recording and reporting standards.</li>
+				  <li>Maintain risk and issue logs and change control records.</li>
+				  <li>Develop and support effective communication mechanisms between the project team members.</li>
+				  <li>Performed training to new employees regarding enhanced IT application softwares.</li>
+				
+				</ul>
+			<!--</div>--><!-- End of jobDutyDesc -->
+		  </div><!-- End of frame -->
+		</div><!-- End of first job-->
+			
+		<!-- TEST PART -->
+		<!-- Second Job -->
+		 <div class = "job"> 
+			<div class= "item row">
+			  <div class = "col">
+				<h2 class = "title">Bell Mobility. Mississauga,&nbsp;&nbsp;ON, Canada</h2>
+			  </div><!-- End of First Col -->
+			  <div class = "col">
+				<h2 class = "jobTitle">ICT Hardware Support Associate</h2><br>
+			  </div><!-- End of second Col -->
+			  <div class = "col">
+				<h2 class = "workDate">Jan 2013 - Apr 2013</h2><br>
+			  </div><!-- End of third Col -->
+			</div><!-- End of item row -->
+			
+		
+             <div class = "jobDutyDesc">
+				<ul>
+				  <li>Provided technical support of LAN, desktop, Servers and peripheral equipment including problem solving diagnostics, repairs through iCare ticketing System.</li>
+				  <li>Developed standalone systems to monitoring, investigate performance bottlenecks.</li>
+				  <li>Trained new/existing employees with application software that were enhanced by IT developers</li>
+				  <li>Performed hands on experience on installation of desktop PC, servers, Linux based operating system (Ubuntu, Debian) for upgrade infrastructure enhancements</li>
+				  <li>Consulted buyers on procurement of desktop and enterprise hardware solutions</li>
+				  <li>Champion the technical planning process from functional requirements to test planning and computer/network infrastructure analysis</li>
+				  <li>Improved the end user licensing agreement, service level agreement as per ITIL framework</li>
+				  <li>Consulted with cross-functional teams to determine business and technical requirements for system specifications</li>
+				  <li>Tested, evaluated the QA and implement software products (operating systems, applications, and service packs, etc.)</li>
+				  
+				
+				</ul>
+		     </div>
+			
+			</div><!-- End of second job -->
+			
+		  <!-- TEST PART -->
+		<!-- Third Job -->
+		 <div class = "job"> 
+			<div class= "item row">
+			  <div class = "col">
+				<h2 class = "title">NPCC.&nbsp;&nbsp;&nbsp;Abu Dhabi, UAE</h2><br>
+			  </div><!-- End of First Col -->
+			  <div class = "col">
+				<h2 class = "jobTitle">Information System Coordinator</h2><br>
+			  </div><!-- End of second Col -->
+			  <div class = "col">
+				<h2 class = "workDate">Oct 2010 - Dec 2012</h2><br>
+			  </div><!-- End of third Col -->
+			</div><!-- End of item row -->
+			
+			<div class = "jobDutyDesc">
+				
+				
+				<ul>
+				  <li>Escalated and route complex or unsolved problems to second level support specialists.</li>
+				  <li>Participated in Change advisory board meetings for release of new software application to end-user (planning and executing)</li>
+				  <li>Gathered feedback end-user, stakeholders in understanding and continuous improvement of IT operations, software applications and KPIs.</li>
+				  <li>Setup priority levels concerning the confidentiality of data to different user levels of their hierarchy</li>
+				  <li>Accessed requests from the end-user for Application modification analyse the requirements, data collection and create report for modification.</li>
+				  <li>Supported the suppliers through email or telephone and helped in retrieving their login-in details for e-procurement system, so as to quote for a bid</li>
+				  <li>Used IT Service Management tool – Cherwell for analysing incident management, ticket management and closing tickets as per SLA (Service Level Agreement). </li>
+				  <li>Provided access and support on citrix – XenApp application for remote  end users</li>
+				  
+				</ul>
+		  </div><!-- End of jobDesc-->
+			
+			</div><!-- End of third job -->
+			
+			<!-- TEST PART -->
+		<!-- fourth Job -->
+		 <div class = "job"> 
+			<div class= "item row">
+			  <div class = "col">
+				<h2 class = "title">Zantida UK Travel Ltd.&nbsp;&nbsp; London - United Kingdom</h2>
+			  </div><!-- End of First Col -->
+			  <div class = "col">
+				<h2 class = "jobTitle">System Support Engineer</h2><br>
+			  </div><!-- End of second Col -->
+			  <div class = "col">
+				<h2 class = "workDate">Apr 2008 - Aug 2010</h2><br>
+			  </div><!-- End of third Col -->
+			</div><!-- End of item row -->
+		
+			
+			<div class = "jobDutyDesc">
+			
+				<ul>
+				  <li>Assisted in developing the existing website</li>
+				  <li>High level of customer focus and strong customer support commitment</li>
+				  <li>Maintained User’s login details and assisting them in retrieving details if they have forgotten</li>
+				  <li>Supported and assisted the department team; commit to and be accountable for overall group success</li>
+				  <li>Software installation, configuration and troubleshooting the systems of end users</li>
+				  <li>Performed all IT support duties as defined by the appropriate team lead</li>
+				  <li>Worked with other support groups and vendors to provide seamless support to customers</li>
+				  <li>Monitored, analyzed and addressed reliability and performance issues</li>
+				  <li>Resolved problems on a day to day basis include system failures, application errors, hardware issues, etc</li>
+				  <li>Meeting with different developers for the enhancement of the existing company website</li>
+				  <li>Problem-solving, troubleshooting, maintenance, installation, configuration, and management of server and the LAN network</li>
+				  <li>Monitored the systems before its point of failure and therefore perform preventative maintenance for the software and hardware of each system</li>
+				  <li>Maintained the User account and company email system</li>
+				  
+				</ul>
+		  </div><!-- End of jobDesc -->
+			</div><!-- End of fourth job -->
+		 
+			
+		</div><!-- End of experienceDesc -->
+		
+	
+	</section><!-- End of Section -->
+
+	<!--footer-->
+	<footer>
+		<p>&copy; Fadil Abdul Lathif, All Rights Reserved </p>
+		Airplane graphic by <a href="http://www.freepik.com/">Freepik</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
+	</footer><!--End of Footer -->
+	
+	<script type = "text/javascript">
+	   /*scrollbar execution*/
+		jQuery(function($) {
+			$('#frame').sly({
+			vertical: 1,
+
+			itemNav: 'forceCentered',
+			smart: 1,
+			activateOn: 'click',
+
+			scrollBy:1,
+
+			mouseDragging:1,
+			swingSpeed: 0.6,
+
+			scrollBar: $('#scrollbar'),
+			dragHandle: 2,
+
+			speed: 300,
+			startAt:1 
+  });
+
+});
+	
+	
+	</script>
+	
+
+</body>
+</html>
