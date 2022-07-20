@@ -13,3 +13,6 @@ Collection of my work
 03_Guess_Number_Game           :    A fun game where user gets to guess number and program will check to see whether it matches the
                                     random number that has been generated. 
                                     Languages : HTML, CSS, javascript
+                                    
+04_CodeOperators               :    A responsive website for fictinal coding institute.
+                                    Languages : HTML, CSS
