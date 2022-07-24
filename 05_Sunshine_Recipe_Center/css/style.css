@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*::::::: TAGS :::::::*/
+
+h1{
+	font-size: 3.5rem;
+}
+
+.white{
+	color: yellow;
+	text-shadow: 2px 2px red;
+	letter-spacing: 2px;
+	font-family: "Alex Brush", cursive;
+}
+
+.orange{
+	color: orange;
+	font-family: "Alex Brush", cursive;
+}
+
+h2, p{
+	font-family:  "Poppins",sans-serif;
+}
+
+
+/*:::: Centers the navigation bar :::::*/
+
+nav{
+     background-color:#000;
+    font-family: "poppins",sans-serif;
+
+}
+
+.nav-bar{
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	height: 50px;
+	width: 80%;
+	/*background-color:orange;*/
+}
+
+.nav-bar li{
+	margin: 0 auto;
+	list-style: none;
+}
+
+
+.nav-bar li a{
+	text-decoration: none;
+
+	color: #fefaf0;
+
+}
+
+.nav-bar li a:hover{
+	color: orange;
+	cursor: pointer;
+}
+
+
+
+header{
+	background-image:url(../images/bg.png);
+	background-position:center;
+	background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    color: maroon;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    font-family: "poppins",sans-serif;
+    position: relative;
+
+}
+
+.logo{
+   /*background-color: pink;*/
+   position: absolute;
+   top: 0px;
+   padding: 20px;
+}
+
+.logo-txt{
+	font-size: 2.5rem;
+}
+
+.titles{
+    width: 80%;
+    margin: 0 auto;
+    /*background-color: yellow;*/
+    text-decoration: none;
+
+}
+
+.tag-line{
+	line-height: 1.5;
+}
+
+/*::::section gallery: ::::*/
+.gallery{
+	width: 100%;
+	color: #fefaf0;
+}
+
+.gal-contain{
+	width: 80%;
+	margin: 60px auto;
+	/*background-color: pink;*/
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.item{
+	flex-basis: 30%;
+	/*background-color: red;*/
+	text-align: center;
+	border-style: solid;
+	border-width: 2px;
+	border-color: maroon;
+	box-shadow: 3px 4px black;
+	overflow: hidden;
+}
+
+.move{
+	margin-top: 40px;
+}
+
+.desc{
+	background: maroon;
+	padding: 5px;
+
+}
+
+/*.item:hover{
+	background-color:maroon;
+	opacity: 0.3;
+
+}*/
+
+
+#main,#news{
+	padding:100px 0;
+	background-color: #fefaf0;
+}
+
+
+/*::::review: :::*/
+
+.item img{
+	width: 300px;
+	transition: transform .4s;
+}
+
+p img:hover{
+	 transform: scale(1.4);
+     transform-origin: 50% 50%;
+}
